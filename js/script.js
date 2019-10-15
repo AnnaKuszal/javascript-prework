@@ -1,8 +1,8 @@
-function playGame(playerInput){
+const playGame = function(playerInput){
   console.log('wywołano playGame');
   clearMessages();
 
-  function getMoveName(argMoveId){
+  const getMoveName = function (argMoveId){
     console.log('wywołano getMoveName');
     console.log('argumenty: ' + argMoveId);
 
@@ -32,7 +32,7 @@ function playGame(playerInput){
   printMessage('Twój ruch to: ' + playerMove);
 
 
-  function displayResult(argComputerMove, argPlayerMove) {
+  const displayResult = function(argComputerMove, argPlayerMove) {
     console.log('wywołano displayResult');
     console.log('moves:', argComputerMove, argPlayerMove);
 
@@ -56,7 +56,6 @@ function playGame(playerInput){
           printMessage('Dokonałeś nieprawidłowego wyboru.');
       }
   }
-
 
   displayResult(computerMove, playerMove);
 
